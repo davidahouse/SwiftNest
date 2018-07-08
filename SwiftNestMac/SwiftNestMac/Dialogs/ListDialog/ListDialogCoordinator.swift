@@ -13,7 +13,7 @@ class ListDialogCoordinator {
     weak var presentedWindow: NSWindow?
     var selectedIdentifier: String? = nil
     
-    func presentDialog(from: NSWindow, model: Listable, title: String, completion: @escaping (String?) -> Void) {
+    func presentDialog(from: NSWindow, model: Listable, title: String, allowCancel: Bool = true, completion: @escaping (String?) -> Void) {
         
         fromWindow = from
         let storyboard = NSStoryboard(name: "ListDialog", bundle: nil)
@@ -23,6 +23,7 @@ class ListDialogCoordinator {
             window.title = title
             viewController.delegate = self
             viewController.model = model
+            viewController.allowCancel = allowCancel
             viewController.preferredContentSize = NSSize(width: from.frame.size.width - 100, height: from.frame.size.height - 100)
             from.beginSheet(window, completionHandler: { response in
                 completion(self.selectedIdentifier)
@@ -35,6 +36,9 @@ extension ListDialogCoordinator: ListDialogViewControllerDelegate {
     
     
     func cancelSelected() {
+        
+        selectedIdentifier = nil
+        
         guard let fromWindow = fromWindow, let presentedWindow = presentedWindow else {
             return
         }

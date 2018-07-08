@@ -27,7 +27,7 @@ class ViewController: NSViewController {
     @IBAction func test(_ sender: Any) {
     
         listDialogCoordinator = ListDialogCoordinator()
-        listDialogCoordinator?.presentDialog(from: self.view.window!, model: ListableModel.testArray, title: "List Dialog") { selected in
+        listDialogCoordinator?.presentDialog(from: self.view.window!, model: ListableModel.testArray, title: "List Dialog", allowCancel: false) { selected in
             print("done!")
             print("selected: \(selected)")
             self.listDialogCoordinator = nil
