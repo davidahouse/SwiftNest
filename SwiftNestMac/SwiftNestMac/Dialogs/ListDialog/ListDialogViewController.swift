@@ -16,11 +16,19 @@ protocol ListDialogViewControllerDelegate: class {
 class ListDialogViewController: NSViewController {
     
     @IBOutlet var tableView: NSTableView!
+    @IBOutlet var cancelButton: NSButton!
+    
     weak var delegate: ListDialogViewControllerDelegate?
 
     var model: Listable? {
         didSet {
             setupTable()
+        }
+    }
+
+    var allowCancel: Bool = true {
+        didSet {
+            self.cancelButton.isHidden = !allowCancel
         }
     }
     
@@ -29,6 +37,7 @@ class ListDialogViewController: NSViewController {
         
         tableView.selectionHighlightStyle = .regular
         tableView.usesAlternatingRowBackgroundColors = true
+        cancelButton.isHidden = !allowCancel
     }
     
     private func setupTable() {

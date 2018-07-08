@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="ejB-X0-oJx">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="ejB-X0-oJx">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14295.6"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <scenes>
         <!--Window Controller-->
         <scene sceneID="5df-ra-Yim">
             <objects>
-                <windowController id="ejB-X0-oJx" customClass="ListDialogWindowController" customModule="Lisa" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="H43-Nx-276">
+                <windowController id="ejB-X0-oJx" customClass="ListDialogWindowController" customModule="SwiftNestMac" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="H43-Nx-276">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="245" y="301" width="480" height="270"/>
@@ -31,7 +30,7 @@
         <!--List Dialog View Controller-->
         <scene sceneID="D87-BW-979">
             <objects>
-                <viewController id="Jpj-k5-Df1" customClass="ListDialogViewController" customModule="Lisa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Jpj-k5-Df1" customClass="ListDialogViewController" customModule="SwiftNestMac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="1EY-Zw-WFD">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -76,7 +75,7 @@ DQ
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn identifier="" width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="uB0-Vj-K1p">
+                                                <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="uB0-Vj-K1p">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -130,9 +129,28 @@ DQ
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LPm-ch-oHb">
+                                <rect key="frame" x="330" y="13" width="82" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="RDK-eN-EdF"/>
+                                    <constraint firstAttribute="height" constant="21" id="h0c-7Z-6Fx"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5e3-Sb-B7I">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="cancelSelected:" target="Jpj-k5-Df1" id="Rao-lf-kW5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="YFL-sW-geQ" firstAttribute="top" secondItem="tRm-cm-Bdt" secondAttribute="bottom" constant="20" id="BTU-gL-aDf"/>
+                            <constraint firstAttribute="bottom" secondItem="LPm-ch-oHb" secondAttribute="bottom" constant="20" id="C0t-aF-go8"/>
+                            <constraint firstItem="YFL-sW-geQ" firstAttribute="leading" secondItem="LPm-ch-oHb" secondAttribute="trailing" constant="7" id="FFj-Yq-ztp"/>
                             <constraint firstAttribute="trailing" secondItem="tRm-cm-Bdt" secondAttribute="trailing" constant="20" id="TDu-3A-3wo"/>
                             <constraint firstAttribute="bottom" secondItem="YFL-sW-geQ" secondAttribute="bottom" constant="20" id="Vd2-dq-2m9"/>
                             <constraint firstItem="tRm-cm-Bdt" firstAttribute="leading" secondItem="1EY-Zw-WFD" secondAttribute="leading" constant="20" id="ecZ-a9-y7Y"/>
@@ -141,6 +159,7 @@ DQ
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cancelButton" destination="LPm-ch-oHb" id="k3W-Cv-mhK"/>
                         <outlet property="tableView" destination="ImH-FS-GQZ" id="IdG-pG-z0N"/>
                     </connections>
                 </viewController>
