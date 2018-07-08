@@ -72,6 +72,16 @@ class ListDialogViewController: NSViewController {
     @IBAction func cancelSelected(_ sender: Any) {
         delegate?.cancelSelected()
     }
+
+    @IBAction func tableViewDoubleClick(_ sender: Any) {
+        let row = tableView.selectedRow
+        if row >= 0 {
+            if let identifier = model?.identifier(for: row) {
+                delegate?.itemSelected(identifier: identifier)
+                delegate?.okSelected()
+            }
+        }
+    }
 }
 
 extension ListDialogViewController: NSTableViewDataSource {
@@ -96,15 +106,5 @@ extension ListDialogViewController: NSTableViewDelegate {
             return cell
         }
         return nil
-    }
-    
-    func tableViewSelectionDidChange(_ notification: Notification) {
-        
-        let row = tableView.selectedRow
-        if row >= 0 {
-            if let identifier = model?.identifier(for: row) {
-                delegate?.itemSelected(identifier: identifier)
-            }
-        }
     }
 }

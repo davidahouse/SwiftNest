@@ -110,6 +110,7 @@ DQ
                                                 </tableColumn>
                                             </tableColumns>
                                             <connections>
+                                                <action trigger="doubleAction" selector="tableViewDoubleClick:" target="Jpj-k5-Df1" id="utK-3F-7HQ"/>
                                                 <outlet property="dataSource" destination="Jpj-k5-Df1" id="jEf-SP-b1W"/>
                                                 <outlet property="delegate" destination="Jpj-k5-Df1" id="2bm-U4-mb2"/>
                                             </connections>
