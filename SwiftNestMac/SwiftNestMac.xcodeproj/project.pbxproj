@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		948782BF20F149A4000360DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782BE20F149A4000360DF /* AppDelegate.swift */; };
+		948782C120F149A4000360DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782C020F149A4000360DF /* ViewController.swift */; };
+		948782C320F149A6000360DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948782C220F149A6000360DF /* Assets.xcassets */; };
+		948782C620F149A6000360DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948782C420F149A6000360DF /* Main.storyboard */; };
+		948782D220F149A6000360DF /* SwiftNestMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782D120F149A6000360DF /* SwiftNestMacTests.swift */; };
+		948782E920F14D25000360DF /* ListDialogCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782DE20F14D25000360DF /* ListDialogCoordinator.swift */; };
+		948782EA20F14D25000360DF /* ListDialogWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782DF20F14D25000360DF /* ListDialogWindowController.swift */; };
+		948782EB20F14D25000360DF /* ListDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782E020F14D25000360DF /* ListDialogViewController.swift */; };
+		948782EC20F14D25000360DF /* ListDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948782E120F14D25000360DF /* ListDialog.storyboard */; };
+		948782ED20F14D25000360DF /* Listable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782E220F14D25000360DF /* Listable.swift */; };
+		948782EE20F14D25000360DF /* EditDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782E420F14D25000360DF /* EditDialogViewController.swift */; };
+		948782EF20F14D25000360DF /* EditDialogWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782E520F14D25000360DF /* EditDialogWindowController.swift */; };
+		948782F020F14D25000360DF /* Editable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782E620F14D25000360DF /* Editable.swift */; };
+		948782F120F14D25000360DF /* EditDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948782E720F14D25000360DF /* EditDialog.storyboard */; };
+		948782F220F14D25000360DF /* EditDialogCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782E820F14D25000360DF /* EditDialogCoordinator.swift */; };
+		948782F420F14D4F000360DF /* EditDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782F320F14D4F000360DF /* EditDetails.swift */; };
+		948782F620F14E6B000360DF /* EditField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782F520F14E6B000360DF /* EditField.swift */; };
+		948782F820F14ED8000360DF /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782F720F14ED8000360DF /* Formatter.swift */; };
+		94C2C48A20F1972B00BAD87E /* ListableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2C48920F1972B00BAD87E /* ListableModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		948782CE20F149A6000360DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 948782B320F149A4000360DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 948782BA20F149A4000360DF;
+			remoteInfo = SwiftNestMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		948782BB20F149A4000360DF /* SwiftNestMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNestMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		948782BE20F149A4000360DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		948782C020F149A4000360DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		948782C220F149A6000360DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		948782C520F149A6000360DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		948782C720F149A6000360DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		948782C820F149A6000360DF /* SwiftNestMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftNestMac.entitlements; sourceTree = "<group>"; };
+		948782CD20F149A6000360DF /* SwiftNestMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNestMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		948782D120F149A6000360DF /* SwiftNestMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNestMacTests.swift; sourceTree = "<group>"; };
+		948782D320F149A6000360DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		948782DE20F14D25000360DF /* ListDialogCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDialogCoordinator.swift; sourceTree = "<group>"; };
+		948782DF20F14D25000360DF /* ListDialogWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDialogWindowController.swift; sourceTree = "<group>"; };
+		948782E020F14D25000360DF /* ListDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDialogViewController.swift; sourceTree = "<group>"; };
+		948782E120F14D25000360DF /* ListDialog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListDialog.storyboard; sourceTree = "<group>"; };
+		948782E220F14D25000360DF /* Listable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listable.swift; sourceTree = "<group>"; };
+		948782E420F14D25000360DF /* EditDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDialogViewController.swift; sourceTree = "<group>"; };
+		948782E520F14D25000360DF /* EditDialogWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDialogWindowController.swift; sourceTree = "<group>"; };
+		948782E620F14D25000360DF /* Editable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Editable.swift; sourceTree = "<group>"; };
+		948782E720F14D25000360DF /* EditDialog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditDialog.storyboard; sourceTree = "<group>"; };
+		948782E820F14D25000360DF /* EditDialogCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDialogCoordinator.swift; sourceTree = "<group>"; };
+		948782F320F14D4F000360DF /* EditDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDetails.swift; sourceTree = "<group>"; };
+		948782F520F14E6B000360DF /* EditField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditField.swift; sourceTree = "<group>"; };
+		948782F720F14ED8000360DF /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		94C2C48920F1972B00BAD87E /* ListableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListableModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		948782B820F149A4000360DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948782CA20F149A6000360DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		948782B220F149A4000360DF = {
+			isa = PBXGroup;
+			children = (
+				948782BD20F149A4000360DF /* SwiftNestMac */,
+				948782D020F149A6000360DF /* SwiftNestMacTests */,
+				948782BC20F149A4000360DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		948782BC20F149A4000360DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				948782BB20F149A4000360DF /* SwiftNestMac.app */,
+				948782CD20F149A6000360DF /* SwiftNestMacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		948782BD20F149A4000360DF /* SwiftNestMac */ = {
+			isa = PBXGroup;
+			children = (
+				94C2C48820F1971000BAD87E /* Test */,
+				948782DC20F14A32000360DF /* Dialogs */,
+				948782BE20F149A4000360DF /* AppDelegate.swift */,
+				948782C020F149A4000360DF /* ViewController.swift */,
+				948782C220F149A6000360DF /* Assets.xcassets */,
+				948782C420F149A6000360DF /* Main.storyboard */,
+				948782C720F149A6000360DF /* Info.plist */,
+				948782C820F149A6000360DF /* SwiftNestMac.entitlements */,
+			);
+			path = SwiftNestMac;
+			sourceTree = "<group>";
+		};
+		948782D020F149A6000360DF /* SwiftNestMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				948782D120F149A6000360DF /* SwiftNestMacTests.swift */,
+				948782D320F149A6000360DF /* Info.plist */,
+			);
+			path = SwiftNestMacTests;
+			sourceTree = "<group>";
+		};
+		948782DC20F14A32000360DF /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				948782E320F14D25000360DF /* EditDialog */,
+				948782DD20F14D25000360DF /* ListDialog */,
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
+		948782DD20F14D25000360DF /* ListDialog */ = {
+			isa = PBXGroup;
+			children = (
+				948782DE20F14D25000360DF /* ListDialogCoordinator.swift */,
+				948782DF20F14D25000360DF /* ListDialogWindowController.swift */,
+				948782E020F14D25000360DF /* ListDialogViewController.swift */,
+				948782E120F14D25000360DF /* ListDialog.storyboard */,
+				948782E220F14D25000360DF /* Listable.swift */,
+			);
+			path = ListDialog;
+			sourceTree = "<group>";
+		};
+		948782E320F14D25000360DF /* EditDialog */ = {
+			isa = PBXGroup;
+			children = (
+				948782F720F14ED8000360DF /* Formatter.swift */,
+				948782F520F14E6B000360DF /* EditField.swift */,
+				948782F320F14D4F000360DF /* EditDetails.swift */,
+				948782E420F14D25000360DF /* EditDialogViewController.swift */,
+				948782E520F14D25000360DF /* EditDialogWindowController.swift */,
+				948782E620F14D25000360DF /* Editable.swift */,
+				948782E720F14D25000360DF /* EditDialog.storyboard */,
+				948782E820F14D25000360DF /* EditDialogCoordinator.swift */,
+			);
+			path = EditDialog;
+			sourceTree = "<group>";
+		};
+		94C2C48820F1971000BAD87E /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				94C2C48920F1972B00BAD87E /* ListableModel.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		948782BA20F149A4000360DF /* SwiftNestMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 948782D620F149A6000360DF /* Build configuration list for PBXNativeTarget "SwiftNestMac" */;
+			buildPhases = (
+				948782B720F149A4000360DF /* Sources */,
+				948782B820F149A4000360DF /* Frameworks */,
+				948782B920F149A4000360DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftNestMac;
+			productName = SwiftNestMac;
+			productReference = 948782BB20F149A4000360DF /* SwiftNestMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		948782CC20F149A6000360DF /* SwiftNestMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 948782D920F149A6000360DF /* Build configuration list for PBXNativeTarget "SwiftNestMacTests" */;
+			buildPhases = (
+				948782C920F149A6000360DF /* Sources */,
+				948782CA20F149A6000360DF /* Frameworks */,
+				948782CB20F149A6000360DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				948782CF20F149A6000360DF /* PBXTargetDependency */,
+			);
+			name = SwiftNestMacTests;
+			productName = SwiftNestMacTests;
+			productReference = 948782CD20F149A6000360DF /* SwiftNestMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		948782B320F149A4000360DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = davidahouse;
+				TargetAttributes = {
+					948782BA20F149A4000360DF = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					948782CC20F149A6000360DF = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 948782BA20F149A4000360DF;
+					};
+				};
+			};
+			buildConfigurationList = 948782B620F149A4000360DF /* Build configuration list for PBXProject "SwiftNestMac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 948782B220F149A4000360DF;
+			productRefGroup = 948782BC20F149A4000360DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				948782BA20F149A4000360DF /* SwiftNestMac */,
+				948782CC20F149A6000360DF /* SwiftNestMacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		948782B920F149A4000360DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948782C320F149A6000360DF /* Assets.xcassets in Resources */,
+				948782C620F149A6000360DF /* Main.storyboard in Resources */,
+				948782F120F14D25000360DF /* EditDialog.storyboard in Resources */,
+				948782EC20F14D25000360DF /* ListDialog.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948782CB20F149A6000360DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		948782B720F149A4000360DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948782EE20F14D25000360DF /* EditDialogViewController.swift in Sources */,
+				94C2C48A20F1972B00BAD87E /* ListableModel.swift in Sources */,
+				948782F820F14ED8000360DF /* Formatter.swift in Sources */,
+				948782EB20F14D25000360DF /* ListDialogViewController.swift in Sources */,
+				948782EF20F14D25000360DF /* EditDialogWindowController.swift in Sources */,
+				948782ED20F14D25000360DF /* Listable.swift in Sources */,
+				948782F620F14E6B000360DF /* EditField.swift in Sources */,
+				948782F220F14D25000360DF /* EditDialogCoordinator.swift in Sources */,
+				948782F020F14D25000360DF /* Editable.swift in Sources */,
+				948782C120F149A4000360DF /* ViewController.swift in Sources */,
+				948782E920F14D25000360DF /* ListDialogCoordinator.swift in Sources */,
+				948782EA20F14D25000360DF /* ListDialogWindowController.swift in Sources */,
+				948782F420F14D4F000360DF /* EditDetails.swift in Sources */,
+				948782BF20F149A4000360DF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948782C920F149A6000360DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948782D220F149A6000360DF /* SwiftNestMacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		948782CF20F149A6000360DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 948782BA20F149A4000360DF /* SwiftNestMac */;
+			targetProxy = 948782CE20F149A6000360DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		948782C420F149A6000360DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				948782C520F149A6000360DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		948782D420F149A6000360DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		948782D520F149A6000360DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		948782D720F149A6000360DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftNestMac/SwiftNestMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftNestMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = davidahouse.SwiftNestMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		948782D820F149A6000360DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftNestMac/SwiftNestMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftNestMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = davidahouse.SwiftNestMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		948782DA20F149A6000360DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftNestMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = davidahouse.SwiftNestMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftNestMac.app/Contents/MacOS/SwiftNestMac";
+			};
+			name = Debug;
+		};
+		948782DB20F149A6000360DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftNestMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = davidahouse.SwiftNestMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftNestMac.app/Contents/MacOS/SwiftNestMac";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		948782B620F149A4000360DF /* Build configuration list for PBXProject "SwiftNestMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				948782D420F149A6000360DF /* Debug */,
+				948782D520F149A6000360DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		948782D620F149A6000360DF /* Build configuration list for PBXNativeTarget "SwiftNestMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				948782D720F149A6000360DF /* Debug */,
+				948782D820F149A6000360DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		948782D920F149A6000360DF /* Build configuration list for PBXNativeTarget "SwiftNestMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				948782DA20F149A6000360DF /* Debug */,
+				948782DB20F149A6000360DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 948782B320F149A4000360DF /* Project object */;
+}

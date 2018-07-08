@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="asW-58-c9L">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="IjQ-YB-5ov">
+            <objects>
+                <windowController id="asW-58-c9L" customClass="EditDialogWindowController" customModule="Lisa" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="CaX-l6-baQ">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="425" y="461" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+                        <connections>
+                            <outlet property="delegate" destination="asW-58-c9L" id="1cB-Wh-FG9"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="D83-2M-Sv0" kind="relationship" relationship="window.shadowedContentViewController" id="KHq-O3-Usu"/>
+                    </connections>
+                </windowController>
+                <customObject id="7l0-P3-pe8" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-209" y="165"/>
+        </scene>
+        <!--Edit Dialog View Controller-->
+        <scene sceneID="QTh-B1-1bW">
+            <objects>
+                <viewController id="D83-2M-Sv0" customClass="EditDialogViewController" customModule="Lisa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="5Vl-DA-ini">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="295"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="FU1-7E-er8">
+                                <rect key="frame" x="20" y="61" width="440" height="214"/>
+                            </customView>
+                            <stackView distribution="fillEqually" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hrn-fw-hsl">
+                                <rect key="frame" x="312" y="20" width="148" height="21"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="R2q-PD-P4r">
+                                        <rect key="frame" x="-6" y="-7" width="82" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6Th-C2-zAH">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="cancelSelected:" target="T80-vQ-JuH" id="s52-P7-dH2"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iSl-ht-CEn">
+                                        <rect key="frame" x="72" y="-7" width="82" height="32"/>
+                                        <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="P0R-j2-kJm">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="okSelected:" target="T80-vQ-JuH" id="fTd-xt-Wbg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7to-97-03T"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FU1-7E-er8" firstAttribute="top" secondItem="5Vl-DA-ini" secondAttribute="top" constant="20" id="497-i7-jlA"/>
+                            <constraint firstItem="Hrn-fw-hsl" firstAttribute="top" secondItem="FU1-7E-er8" secondAttribute="bottom" constant="20" id="8gE-C9-3rt"/>
+                            <constraint firstAttribute="trailing" secondItem="Hrn-fw-hsl" secondAttribute="trailing" constant="20" id="HMO-dn-7yf"/>
+                            <constraint firstAttribute="bottom" secondItem="Hrn-fw-hsl" secondAttribute="bottom" constant="20" id="Pig-NJ-Zht"/>
+                            <constraint firstAttribute="trailing" secondItem="FU1-7E-er8" secondAttribute="trailing" constant="20" id="b01-YM-B1Q"/>
+                            <constraint firstItem="FU1-7E-er8" firstAttribute="leading" secondItem="5Vl-DA-ini" secondAttribute="leading" constant="20" id="nVG-W2-nUq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="formView" destination="FU1-7E-er8" id="XqX-xg-euG"/>
+                    </connections>
+                </viewController>
+                <customObject id="T80-vQ-JuH" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="498" y="140"/>
+        </scene>
+    </scenes>
+</document>
