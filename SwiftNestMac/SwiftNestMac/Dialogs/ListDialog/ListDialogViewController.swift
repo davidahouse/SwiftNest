@@ -9,6 +9,8 @@ import AppKit
 
 protocol ListDialogViewControllerDelegate: class {
     func okSelected()
+    func cancelSelected()
+    func itemSelected(identifier: String)
 }
 
 class ListDialogViewController: NSViewController {
@@ -57,6 +59,10 @@ class ListDialogViewController: NSViewController {
     @IBAction func okSelected(_ sender: Any) {
         delegate?.okSelected()
     }
+    
+    @IBAction func cancelSelected(_ sender: Any) {
+        delegate?.cancelSelected()
+    }
 }
 
 extension ListDialogViewController: NSTableViewDataSource {
@@ -81,5 +87,15 @@ extension ListDialogViewController: NSTableViewDelegate {
             return cell
         }
         return nil
+    }
+    
+    func tableViewSelectionDidChange(_ notification: Notification) {
+        
+        let row = tableView.selectedRow
+        if row >= 0 {
+            if let identifier = model?.identifier(for: row) {
+                delegate?.itemSelected(identifier: identifier)
+            }
+        }
     }
 }

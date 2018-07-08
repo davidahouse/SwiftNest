@@ -59,4 +59,8 @@ extension Array : Listable where Element == ListableModel {
             return ""
         }
     }
+    
+    func identifier(for row: Int) -> String? {
+        return "\(self[row].id)"
+    }
 }

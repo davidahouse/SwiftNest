@@ -7,17 +7,13 @@
 
 import AppKit
 
-protocol ListDialogCoordinatorDelegate: class {
-    func listDialogFinished()
-}
-
 class ListDialogCoordinator {
     
-    weak var delegate: ListDialogCoordinatorDelegate?
     weak var fromWindow: NSWindow?
     weak var presentedWindow: NSWindow?
+    var selectedIdentifier: String? = nil
     
-    func presentDialog(from: NSWindow, model: Listable, title: String, completion: @escaping () -> Void) {
+    func presentDialog(from: NSWindow, model: Listable, title: String, completion: @escaping (String?) -> Void) {
         
         fromWindow = from
         let storyboard = NSStoryboard(name: "ListDialog", bundle: nil)
@@ -29,13 +25,29 @@ class ListDialogCoordinator {
             viewController.model = model
             viewController.preferredContentSize = NSSize(width: from.frame.size.width - 100, height: from.frame.size.height - 100)
             from.beginSheet(window, completionHandler: { response in
-                completion()
+                completion(self.selectedIdentifier)
             })
         }
     }
 }
 
 extension ListDialogCoordinator: ListDialogViewControllerDelegate {
+    
+    
+    func cancelSelected() {
+        guard let fromWindow = fromWindow, let presentedWindow = presentedWindow else {
+            return
+        }
+        
+        DispatchQueue.main.async {
+            fromWindow.endSheet(presentedWindow, returnCode: .OK)
+        }
+    }
+    
+    func itemSelected(identifier: String) {
+        selectedIdentifier = identifier
+    }
+    
     
     func okSelected() {
         

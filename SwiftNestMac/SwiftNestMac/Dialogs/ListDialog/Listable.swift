@@ -12,4 +12,5 @@ protocol Listable {
     func columnName(column: Int) -> String
     func numberOfRows() -> Int
     func valueAt(column: Int, row: Int) -> String
+    func identifier(for row: Int) -> String?
 }
