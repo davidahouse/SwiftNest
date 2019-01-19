@@ -12,20 +12,8 @@
 		948782C320F149A6000360DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948782C220F149A6000360DF /* Assets.xcassets */; };
 		948782C620F149A6000360DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948782C420F149A6000360DF /* Main.storyboard */; };
 		948782D220F149A6000360DF /* SwiftNestMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782D120F149A6000360DF /* SwiftNestMacTests.swift */; };
-		948782E920F14D25000360DF /* ListDialogCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782DE20F14D25000360DF /* ListDialogCoordinator.swift */; };
-		948782EA20F14D25000360DF /* ListDialogWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782DF20F14D25000360DF /* ListDialogWindowController.swift */; };
-		948782EB20F14D25000360DF /* ListDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782E020F14D25000360DF /* ListDialogViewController.swift */; };
-		948782EC20F14D25000360DF /* ListDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948782E120F14D25000360DF /* ListDialog.storyboard */; };
-		948782ED20F14D25000360DF /* Listable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782E220F14D25000360DF /* Listable.swift */; };
-		948782EE20F14D25000360DF /* EditDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782E420F14D25000360DF /* EditDialogViewController.swift */; };
-		948782EF20F14D25000360DF /* EditDialogWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782E520F14D25000360DF /* EditDialogWindowController.swift */; };
-		948782F020F14D25000360DF /* Editable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782E620F14D25000360DF /* Editable.swift */; };
-		948782F120F14D25000360DF /* EditDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948782E720F14D25000360DF /* EditDialog.storyboard */; };
-		948782F220F14D25000360DF /* EditDialogCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782E820F14D25000360DF /* EditDialogCoordinator.swift */; };
-		948782F420F14D4F000360DF /* EditDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782F320F14D4F000360DF /* EditDetails.swift */; };
-		948782F620F14E6B000360DF /* EditField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782F520F14E6B000360DF /* EditField.swift */; };
-		948782F820F14ED8000360DF /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948782F720F14ED8000360DF /* Formatter.swift */; };
 		94C2C48A20F1972B00BAD87E /* ListableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2C48920F1972B00BAD87E /* ListableModel.swift */; };
+		C3D9B95121F39A8F008D350C /* SwiftNest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D9B95021F39A8F008D350C /* SwiftNest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,20 +37,8 @@
 		948782CD20F149A6000360DF /* SwiftNestMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNestMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		948782D120F149A6000360DF /* SwiftNestMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNestMacTests.swift; sourceTree = "<group>"; };
 		948782D320F149A6000360DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		948782DE20F14D25000360DF /* ListDialogCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDialogCoordinator.swift; sourceTree = "<group>"; };
-		948782DF20F14D25000360DF /* ListDialogWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDialogWindowController.swift; sourceTree = "<group>"; };
-		948782E020F14D25000360DF /* ListDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDialogViewController.swift; sourceTree = "<group>"; };
-		948782E120F14D25000360DF /* ListDialog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListDialog.storyboard; sourceTree = "<group>"; };
-		948782E220F14D25000360DF /* Listable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listable.swift; sourceTree = "<group>"; };
-		948782E420F14D25000360DF /* EditDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDialogViewController.swift; sourceTree = "<group>"; };
-		948782E520F14D25000360DF /* EditDialogWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDialogWindowController.swift; sourceTree = "<group>"; };
-		948782E620F14D25000360DF /* Editable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Editable.swift; sourceTree = "<group>"; };
-		948782E720F14D25000360DF /* EditDialog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditDialog.storyboard; sourceTree = "<group>"; };
-		948782E820F14D25000360DF /* EditDialogCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDialogCoordinator.swift; sourceTree = "<group>"; };
-		948782F320F14D4F000360DF /* EditDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDetails.swift; sourceTree = "<group>"; };
-		948782F520F14E6B000360DF /* EditField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditField.swift; sourceTree = "<group>"; };
-		948782F720F14ED8000360DF /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		94C2C48920F1972B00BAD87E /* ListableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListableModel.swift; sourceTree = "<group>"; };
+		C3D9B95021F39A8F008D350C /* SwiftNest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftNest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D9B95121F39A8F008D350C /* SwiftNest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +66,7 @@
 				948782BD20F149A4000360DF /* SwiftNestMac */,
 				948782D020F149A6000360DF /* SwiftNestMacTests */,
 				948782BC20F149A4000360DF /* Products */,
+				C3D9B94F21F39A8F008D350C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				94C2C48820F1971000BAD87E /* Test */,
-				948782DC20F14A32000360DF /* Dialogs */,
 				948782BE20F149A4000360DF /* AppDelegate.swift */,
 				948782C020F149A4000360DF /* ViewController.swift */,
 				948782C220F149A6000360DF /* Assets.xcassets */,
@@ -125,48 +102,20 @@
 			path = SwiftNestMacTests;
 			sourceTree = "<group>";
 		};
-		948782DC20F14A32000360DF /* Dialogs */ = {
-			isa = PBXGroup;
-			children = (
-				948782E320F14D25000360DF /* EditDialog */,
-				948782DD20F14D25000360DF /* ListDialog */,
-			);
-			path = Dialogs;
-			sourceTree = "<group>";
-		};
-		948782DD20F14D25000360DF /* ListDialog */ = {
-			isa = PBXGroup;
-			children = (
-				948782DE20F14D25000360DF /* ListDialogCoordinator.swift */,
-				948782DF20F14D25000360DF /* ListDialogWindowController.swift */,
-				948782E020F14D25000360DF /* ListDialogViewController.swift */,
-				948782E120F14D25000360DF /* ListDialog.storyboard */,
-				948782E220F14D25000360DF /* Listable.swift */,
-			);
-			path = ListDialog;
-			sourceTree = "<group>";
-		};
-		948782E320F14D25000360DF /* EditDialog */ = {
-			isa = PBXGroup;
-			children = (
-				948782F720F14ED8000360DF /* Formatter.swift */,
-				948782F520F14E6B000360DF /* EditField.swift */,
-				948782F320F14D4F000360DF /* EditDetails.swift */,
-				948782E420F14D25000360DF /* EditDialogViewController.swift */,
-				948782E520F14D25000360DF /* EditDialogWindowController.swift */,
-				948782E620F14D25000360DF /* Editable.swift */,
-				948782E720F14D25000360DF /* EditDialog.storyboard */,
-				948782E820F14D25000360DF /* EditDialogCoordinator.swift */,
-			);
-			path = EditDialog;
-			sourceTree = "<group>";
-		};
 		94C2C48820F1971000BAD87E /* Test */ = {
 			isa = PBXGroup;
 			children = (
 				94C2C48920F1972B00BAD87E /* ListableModel.swift */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		C3D9B94F21F39A8F008D350C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3D9B95021F39A8F008D350C /* SwiftNest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,8 +201,6 @@
 			files = (
 				948782C320F149A6000360DF /* Assets.xcassets in Resources */,
 				948782C620F149A6000360DF /* Main.storyboard in Resources */,
-				948782F120F14D25000360DF /* EditDialog.storyboard in Resources */,
-				948782EC20F14D25000360DF /* ListDialog.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,19 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				948782EE20F14D25000360DF /* EditDialogViewController.swift in Sources */,
 				94C2C48A20F1972B00BAD87E /* ListableModel.swift in Sources */,
-				948782F820F14ED8000360DF /* Formatter.swift in Sources */,
-				948782EB20F14D25000360DF /* ListDialogViewController.swift in Sources */,
-				948782EF20F14D25000360DF /* EditDialogWindowController.swift in Sources */,
-				948782ED20F14D25000360DF /* Listable.swift in Sources */,
-				948782F620F14E6B000360DF /* EditField.swift in Sources */,
-				948782F220F14D25000360DF /* EditDialogCoordinator.swift in Sources */,
-				948782F020F14D25000360DF /* Editable.swift in Sources */,
 				948782C120F149A4000360DF /* ViewController.swift in Sources */,
-				948782E920F14D25000360DF /* ListDialogCoordinator.swift in Sources */,
-				948782EA20F14D25000360DF /* ListDialogWindowController.swift in Sources */,
-				948782F420F14D4F000360DF /* EditDetails.swift in Sources */,
 				948782BF20F149A4000360DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +381,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = davidahouse.SwiftNestMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -463,6 +400,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = davidahouse.SwiftNestMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

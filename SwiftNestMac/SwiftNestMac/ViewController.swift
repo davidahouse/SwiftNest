@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import SwiftNest
 
 class ViewController: NSViewController {
 
@@ -27,7 +28,8 @@ class ViewController: NSViewController {
     @IBAction func test(_ sender: Any) {
     
         listDialogCoordinator = ListDialogCoordinator()
-        listDialogCoordinator?.presentDialog(from: self.view.window!, model: ListableModel.testArray, title: "List Dialog", allowCancel: false) { selected in
+        let list = ListableModels(models: ListableModel.testArray)
+        listDialogCoordinator?.presentDialog(from: self.view.window!, model: list, title: "List Dialog", allowCancel: false) { selected in
             print("done!")
             print("selected: \(selected)")
             self.listDialogCoordinator = nil

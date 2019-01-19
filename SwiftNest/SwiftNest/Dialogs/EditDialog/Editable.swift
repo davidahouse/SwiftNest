@@ -6,12 +6,9 @@
 //
 
 import Foundation
-import CloudKit
 
-protocol Editable {
-    
-    var record: CKRecord { get }
-    
+public protocol Editable {
+
     func details() -> [EditDetail]
     func updated(details: [EditDetail]) -> Editable
 }

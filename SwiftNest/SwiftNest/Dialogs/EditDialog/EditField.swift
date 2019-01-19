@@ -15,9 +15,9 @@ enum EditFieldKind {
 }
 
 protocol EditField {
-    
+
     var kind: EditFieldKind { get }
-    
+
     func toString() -> String?
     func toDouble() -> Double?
     func toDate() -> Date?
@@ -26,36 +26,36 @@ protocol EditField {
 typealias EditableField = EditField & NSControl
 
 class EditTextField: NSTextField, EditField {
-    
+
     let kind: EditFieldKind = .text
-    
+
     func toDate() -> Date? {
         return nil
     }
-    
+
     func toString() -> String? {
         return stringValue
     }
-    
+
     func toDouble() -> Double? {
         return nil
     }
 }
 
 class EditCurrencyField: NSTextField, EditField {
-    
+
     let kind: EditFieldKind = .currency
-    
+
     func toDate() -> Date? {
         return nil
     }
-    
+
     func toString() -> String? {
         return nil
     }
-    
+
     func toDouble() -> Double? {
-        
+
         if stringValue.contains("$") {
             return Formatter.stringToCurrency(stringValue)
         } else {
@@ -65,34 +65,34 @@ class EditCurrencyField: NSTextField, EditField {
 }
 
 class EditDateField: NSDatePicker, EditField {
-    
+
     let kind: EditFieldKind = .date
-    
+
     func toDate() -> Date? {
         return dateValue
     }
-    
+
     func toString() -> String? {
         return nil
     }
-    
+
     func toDouble() -> Double? {
         return nil
     }
 }
 
 class EditAccountTypeField: NSPopUpButton, EditField {
-    
+
     let kind: EditFieldKind = .accountType
-    
+
     func toDate() -> Date? {
         return nil
     }
-    
+
     func toString() -> String? {
         return titleOfSelectedItem
     }
-    
+
     func toDouble() -> Double? {
         return nil
     }

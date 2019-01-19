@@ -8,5 +8,5 @@
 import AppKit
 
 class ListDialogWindowController: NSWindowController {
-    
+
 }

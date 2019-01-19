@@ -8,5 +8,5 @@
 import AppKit
 
 class EditDialogWindowController: NSWindowController {
-    
+
 }
