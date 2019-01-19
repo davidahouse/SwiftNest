@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Listable {
+public protocol Listable {
     func numberOfColumns() -> Int
     func columnName(column: Int) -> String
     func numberOfRows() -> Int

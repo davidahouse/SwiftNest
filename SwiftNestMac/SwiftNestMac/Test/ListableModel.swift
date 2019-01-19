@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftNest
 
 struct ListableModel {
     
@@ -27,12 +28,13 @@ struct ListableModel {
     }()
 }
 
-extension Array : Listable where Element == ListableModel {
-    
+struct ListableModels: Listable {
+    let models: [ListableModel]
+
     func numberOfColumns() -> Int {
         return 2
     }
-    
+
     func columnName(column: Int) -> String {
         switch column {
         case 1:
@@ -43,13 +45,13 @@ extension Array : Listable where Element == ListableModel {
             return ""
         }
     }
-    
+
     func numberOfRows() -> Int {
-        return count
+        return models.count
     }
-    
+
     func valueAt(column: Int, row: Int) -> String {
-        let item = self[row]
+        let item = models[row]
         switch column {
         case 1:
             return "\(item.id)"
@@ -59,8 +61,8 @@ extension Array : Listable where Element == ListableModel {
             return ""
         }
     }
-    
+
     func identifier(for row: Int) -> String? {
-        return "\(self[row].id)"
+        return "\(models[row].id)"
     }
 }
