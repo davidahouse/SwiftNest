@@ -41,6 +41,8 @@
 		C3D9B97321F3AA12008D350C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B97121F3AA12008D350C /* Color.swift */; };
 		C3D9B97621F3AA36008D350C /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B97521F3AA36008D350C /* Regex.swift */; };
 		C3D9B97721F3AA36008D350C /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B97521F3AA36008D350C /* Regex.swift */; };
+		C3F0B4CF21F4B3E80048150A /* FileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F0B4CE21F4B3E80048150A /* FileProvider.swift */; };
+		C3F0B4D121F4B3F10048150A /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F0B4D021F4B3F10048150A /* FileManager+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		C3D9B96C21F3AA0A008D350C /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		C3D9B97121F3AA12008D350C /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C3D9B97521F3AA36008D350C /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		C3F0B4CE21F4B3E80048150A /* FileProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileProvider.swift; sourceTree = "<group>"; };
+		C3F0B4D021F4B3F10048150A /* FileManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 		C3D9B8F121F398B3008D350C /* SwiftNest */ = {
 			isa = PBXGroup;
 			children = (
+				C3F0B4CD21F4B3E80048150A /* Providers */,
 				C3D9B97421F3AA2D008D350C /* Text */,
 				C3D9B96A21F3AA02008D350C /* Model */,
 				C3D9B93A21F3997D008D350C /* Network */,
@@ -171,6 +176,7 @@
 		C3D9B91521F39976008D350C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C3F0B4D021F4B3F10048150A /* FileManager+Extension.swift */,
 				C3D9B96621F3A9E9008D350C /* URL+Extension.swift */,
 				C3D9B91621F39976008D350C /* String+Extensions.swift */,
 				C3D9B91721F39976008D350C /* Date+Extensions.swift */,
@@ -250,6 +256,14 @@
 				C3D9B97521F3AA36008D350C /* Regex.swift */,
 			);
 			path = Text;
+			sourceTree = "<group>";
+		};
+		C3F0B4CD21F4B3E80048150A /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				C3F0B4CE21F4B3E80048150A /* FileProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,8 +421,10 @@
 				C3D9B92C21F39976008D350C /* Data+Extensions.swift in Sources */,
 				C3D9B93F21F3997D008D350C /* NetworkService.swift in Sources */,
 				C3D9B93121F39976008D350C /* Formatter.swift in Sources */,
+				C3F0B4CF21F4B3E80048150A /* FileProvider.swift in Sources */,
 				C3D9B93321F39976008D350C /* EditDetails.swift in Sources */,
 				C3D9B93021F39976008D350C /* Editable.swift in Sources */,
+				C3F0B4D121F4B3F10048150A /* FileManager+Extension.swift in Sources */,
 				C3D9B96D21F3AA0A008D350C /* Image.swift in Sources */,
 				C3D9B92F21F39976008D350C /* EditDialogWindowController.swift in Sources */,
 				C3D9B97621F3AA36008D350C /* Regex.swift in Sources */,
