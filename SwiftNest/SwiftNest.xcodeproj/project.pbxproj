@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C347FA8021F7A5A3008C4E53 /* SwiftNest.h in Headers */ = {isa = PBXBuildFile; fileRef = C347FA7E21F7A5A3008C4E53 /* SwiftNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C347FA8421F7A5B5008C4E53 /* FileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F0B4CE21F4B3E80048150A /* FileProvider.swift */; };
+		C347FA8521F7A5B5008C4E53 /* FileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F0B4CE21F4B3E80048150A /* FileProvider.swift */; };
+		C347FA8621F7A5B9008C4E53 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B97521F3AA36008D350C /* Regex.swift */; };
+		C347FA8721F7A5BE008C4E53 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B97121F3AA12008D350C /* Color.swift */; };
+		C347FA8821F7A5C0008C4E53 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B96B21F3AA0A008D350C /* Image.swift */; };
+		C347FA8921F7A5C3008C4E53 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B96C21F3AA0A008D350C /* Font.swift */; };
+		C347FA8A21F7A5C6008C4E53 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B93B21F3997D008D350C /* NetworkResponse.swift */; };
+		C347FA8B21F7A5C6008C4E53 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B93B21F3997D008D350C /* NetworkResponse.swift */; };
+		C347FA8C21F7A5C9008C4E53 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B93C21F3997D008D350C /* NetworkService.swift */; };
+		C347FA8D21F7A5CA008C4E53 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B93C21F3997D008D350C /* NetworkService.swift */; };
+		C347FA8E21F7A5CC008C4E53 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B93D21F3997D008D350C /* NetworkRequest.swift */; };
+		C347FA8F21F7A5CC008C4E53 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B93D21F3997D008D350C /* NetworkRequest.swift */; };
+		C347FA9021F7A5D3008C4E53 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F0B4D021F4B3F10048150A /* FileManager+Extension.swift */; };
+		C347FA9121F7A5D4008C4E53 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F0B4D021F4B3F10048150A /* FileManager+Extension.swift */; };
+		C347FA9221F7A5D6008C4E53 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B96621F3A9E9008D350C /* URL+Extension.swift */; };
+		C347FA9521F7A5DB008C4E53 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B91721F39976008D350C /* Date+Extensions.swift */; };
+		C347FA9621F7A5DC008C4E53 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B91721F39976008D350C /* Date+Extensions.swift */; };
+		C347FA9721F7A5E3008C4E53 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B91821F39976008D350C /* Data+Extensions.swift */; };
+		C347FA9821F7A5E3008C4E53 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B91821F39976008D350C /* Data+Extensions.swift */; };
+		C347FA9921F7A5E7008C4E53 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B91321F3996D008D350C /* BaseCoordinator.swift */; };
+		C347FA9A21F7A5E8008C4E53 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B91321F3996D008D350C /* BaseCoordinator.swift */; };
 		C3D9B8F921F398B3008D350C /* SwiftNest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D9B8EF21F398B3008D350C /* SwiftNest.framework */; };
 		C3D9B8FE21F398B3008D350C /* SwiftNestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B8FD21F398B3008D350C /* SwiftNestTests.swift */; };
 		C3D9B90021F398B3008D350C /* SwiftNest.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D9B8F221F398B3008D350C /* SwiftNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,6 +78,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C347FA7C21F7A5A2008C4E53 /* SwiftNest_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNest_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C347FA7E21F7A5A3008C4E53 /* SwiftNest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftNest.h; sourceTree = "<group>"; };
+		C347FA7F21F7A5A3008C4E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3D9B8EF21F398B3008D350C /* SwiftNest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D9B8F221F398B3008D350C /* SwiftNest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftNest.h; sourceTree = "<group>"; };
 		C3D9B8F321F398B3008D350C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +120,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C347FA7921F7A5A2008C4E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3D9B8EC21F398B3008D350C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -120,12 +152,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C347FA7D21F7A5A3008C4E53 /* SwiftNest */ = {
+			isa = PBXGroup;
+			children = (
+				C347FA7E21F7A5A3008C4E53 /* SwiftNest.h */,
+				C347FA7F21F7A5A3008C4E53 /* Info.plist */,
+			);
+			path = SwiftNest;
+			sourceTree = "<group>";
+		};
 		C3D9B8E521F398B3008D350C = {
 			isa = PBXGroup;
 			children = (
 				C3D9B8F121F398B3008D350C /* SwiftNest */,
 				C3D9B8FC21F398B3008D350C /* SwiftNestTests */,
 				C3D9B94821F39A3B008D350C /* SwiftNest iOS */,
+				C347FA7D21F7A5A3008C4E53 /* SwiftNest */,
 				C3D9B8F021F398B3008D350C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,6 +178,7 @@
 				C3D9B8EF21F398B3008D350C /* SwiftNest.framework */,
 				C3D9B8F821F398B3008D350C /* SwiftNestTests.xctest */,
 				C3D9B94721F39A3B008D350C /* SwiftNest.framework */,
+				C347FA7C21F7A5A2008C4E53 /* SwiftNest_tvOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,6 +312,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		C347FA7721F7A5A2008C4E53 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C347FA8021F7A5A3008C4E53 /* SwiftNest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3D9B8EA21F398B3008D350C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,6 +339,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		C347FA7B21F7A5A2008C4E53 /* SwiftNest tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C347FA8321F7A5A3008C4E53 /* Build configuration list for PBXNativeTarget "SwiftNest tvOS" */;
+			buildPhases = (
+				C347FA7721F7A5A2008C4E53 /* Headers */,
+				C347FA7821F7A5A2008C4E53 /* Sources */,
+				C347FA7921F7A5A2008C4E53 /* Frameworks */,
+				C347FA7A21F7A5A2008C4E53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftNest tvOS";
+			productName = SwiftNest;
+			productReference = C347FA7C21F7A5A2008C4E53 /* SwiftNest_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		C3D9B8EE21F398B3008D350C /* SwiftNest macOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3D9B90321F398B3008D350C /* Build configuration list for PBXNativeTarget "SwiftNest macOS" */;
@@ -352,6 +421,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = repairward;
 				TargetAttributes = {
+					C347FA7B21F7A5A2008C4E53 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					C3D9B8EE21F398B3008D350C = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -378,11 +450,19 @@
 				C3D9B8EE21F398B3008D350C /* SwiftNest macOS */,
 				C3D9B8F721F398B3008D350C /* SwiftNestTests */,
 				C3D9B94621F39A3B008D350C /* SwiftNest iOS */,
+				C347FA7B21F7A5A2008C4E53 /* SwiftNest tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C347FA7A21F7A5A2008C4E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3D9B8ED21F398B3008D350C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,6 +489,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C347FA7821F7A5A2008C4E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C347FA8521F7A5B5008C4E53 /* FileProvider.swift in Sources */,
+				C347FA8821F7A5C0008C4E53 /* Image.swift in Sources */,
+				C347FA9A21F7A5E8008C4E53 /* BaseCoordinator.swift in Sources */,
+				C347FA8F21F7A5CC008C4E53 /* NetworkRequest.swift in Sources */,
+				C347FA9221F7A5D6008C4E53 /* URL+Extension.swift in Sources */,
+				C347FA9621F7A5DC008C4E53 /* Date+Extensions.swift in Sources */,
+				C347FA8921F7A5C3008C4E53 /* Font.swift in Sources */,
+				C347FA8621F7A5B9008C4E53 /* Regex.swift in Sources */,
+				C347FA8721F7A5BE008C4E53 /* Color.swift in Sources */,
+				C347FA8B21F7A5C6008C4E53 /* NetworkResponse.swift in Sources */,
+				C347FA9821F7A5E3008C4E53 /* Data+Extensions.swift in Sources */,
+				C347FA8D21F7A5CA008C4E53 /* NetworkService.swift in Sources */,
+				C347FA9121F7A5D4008C4E53 /* FileManager+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3D9B8EB21F398B3008D350C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -454,9 +554,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3D9B96821F3A9E9008D350C /* URL+Extension.swift in Sources */,
+				C347FA9021F7A5D3008C4E53 /* FileManager+Extension.swift in Sources */,
+				C347FA9921F7A5E7008C4E53 /* BaseCoordinator.swift in Sources */,
 				C3D9B97721F3AA36008D350C /* Regex.swift in Sources */,
+				C347FA8C21F7A5C9008C4E53 /* NetworkService.swift in Sources */,
+				C347FA9521F7A5DB008C4E53 /* Date+Extensions.swift in Sources */,
+				C347FA8A21F7A5C6008C4E53 /* NetworkResponse.swift in Sources */,
+				C347FA8421F7A5B5008C4E53 /* FileProvider.swift in Sources */,
 				C3D9B97321F3AA12008D350C /* Color.swift in Sources */,
 				C3D9B96E21F3AA0A008D350C /* Image.swift in Sources */,
+				C347FA9721F7A5E3008C4E53 /* Data+Extensions.swift in Sources */,
+				C347FA8E21F7A5CC008C4E53 /* NetworkRequest.swift in Sources */,
 				C3D9B97021F3AA0A008D350C /* Font.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +580,61 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		C347FA8121F7A5A3008C4E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7H6W2T78Z6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftNest/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.repairward.SwiftNest;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Debug;
+		};
+		C347FA8221F7A5A3008C4E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7H6W2T78Z6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftNest/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.repairward.SwiftNest;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		C3D9B90121F398B3008D350C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -743,6 +906,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C347FA8321F7A5A3008C4E53 /* Build configuration list for PBXNativeTarget "SwiftNest tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C347FA8121F7A5A3008C4E53 /* Debug */,
+				C347FA8221F7A5A3008C4E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C3D9B8E921F398B3008D350C /* Build configuration list for PBXProject "SwiftNest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

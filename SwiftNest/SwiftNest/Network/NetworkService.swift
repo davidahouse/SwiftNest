@@ -9,7 +9,7 @@
 import Foundation
 import os.log
 
-enum NetworkTaskResponse {
+public enum NetworkTaskResponse {
     case success(data: Data)
     case failure(error: Error)
 }
@@ -18,7 +18,7 @@ struct Log {
     static var network = OSLog(subsystem: "Network", category: "Logging")
 }
 
-class NetworkService<T: NetworkRequest> {
+public class NetworkService<T: NetworkRequest> {
 
     private let session: URLSession
     private let requestLogging: Bool
@@ -26,14 +26,14 @@ class NetworkService<T: NetworkRequest> {
     private let responseDataLogging: Bool
     var bearerToken: String?
 
-    init(configuration: URLSessionConfiguration = URLSessionConfiguration.default, requestLogging: Bool = false, responseLogging: Bool = false, responseDataLogging: Bool = false) {
+    public init(configuration: URLSessionConfiguration = URLSessionConfiguration.default, requestLogging: Bool = false, responseLogging: Bool = false, responseDataLogging: Bool = false) {
         session = URLSession(configuration: configuration)
         self.requestLogging = requestLogging
         self.responseLogging = responseLogging
         self.responseDataLogging = responseDataLogging
     }
 
-    func execute(request: T, completion: @escaping (_ response: NetworkTaskResponse) -> Void) {
+    public func execute(request: T, completion: @escaping (_ response: NetworkTaskResponse) -> Void) {
 
         guard let urlRequest = request.createRequest(headers: requestHeaders()) else {
             return
