@@ -8,28 +8,28 @@
 
 import Foundation
 
-enum NetworkRequestMethod: String {
+public enum NetworkRequestMethod: String {
     case get = "GET"
     case post = "POST"
     case put = "PUT"
     case delete = "DELETE"
 }
 
-enum NetworkRequestEncoding {
+public enum NetworkRequestEncoding {
     case none
     case form(formElements: [String: CustomStringConvertible])
     case multipartForm(elements: [MultipartFormElement])
     case json(data: Data)
 }
 
-protocol NetworkRequest {
-    func host() -> String
-    func endpoint() -> String
-    func method() -> NetworkRequestMethod
-    func bodyEncoding() -> NetworkRequestEncoding
+public protocol NetworkRequest {
+    var host: String { get }
+    var endpoint: String { get }
+    var method: NetworkRequestMethod { get }
+    var bodyEncoding: NetworkRequestEncoding { get }
 }
 
-struct MultipartFormElement {
+public struct MultipartFormElement {
     let name: String
     let fileName: String?
     let contentType: String?
@@ -52,12 +52,10 @@ struct MultipartFormElement {
 
 extension NetworkRequest {
 
-    func createRequest(headers: [String: CustomStringConvertible] = [:]) -> URLRequest? {
+    public func createRequest(headers: [String: CustomStringConvertible] = [:]) -> URLRequest? {
 
         let url: URL? = {
 
-            let host = self.host()
-            let endpoint = self.endpoint()
             if endpoint.hasPrefix("/") {
                 return URL(string: "\(host)\(endpoint)")
             } else {
@@ -70,9 +68,9 @@ extension NetworkRequest {
         }
 
         var request = URLRequest(url: requestURL)
-        request.httpMethod = self.method().rawValue
+        request.httpMethod = method.rawValue
 
-        let encodingType = self.bodyEncoding()
+        let encodingType = bodyEncoding
         switch encodingType {
         case .none:
             break

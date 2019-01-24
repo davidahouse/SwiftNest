@@ -6,7 +6,7 @@
 //  Copyright © 2018 davidahouse. All rights reserved.
 //
 
-import AppKit
+import Foundation
 
 enum CoordinatorEventDirection {
     case both

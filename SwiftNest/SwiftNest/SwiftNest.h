@@ -2,11 +2,11 @@
 //  SwiftNest.h
 //  SwiftNest
 //
-//  Created by David House on 1/19/19.
+//  Created by David House on 1/22/19.
 //  Copyright © 2019 repairward. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for SwiftNest.
 FOUNDATION_EXPORT double SwiftNestVersionNumber;
