@@ -54,12 +54,16 @@ extension NetworkRequest {
 
     public func createRequest(headers: [String: CustomStringConvertible] = [:]) -> URLRequest? {
 
+        guard let encodedEndpoint = endpoint.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) else {
+            return nil
+        }
+
         let url: URL? = {
 
-            if endpoint.hasPrefix("/") {
-                return URL(string: "\(host)\(endpoint)")
+            if encodedEndpoint.hasPrefix("/") {
+                return URL(string: "\(host)\(encodedEndpoint)")
             } else {
-                return URL(string: "\(host)/\(endpoint)")
+                return URL(string: "\(host)/\(encodedEndpoint)")
             }
         }()
 
