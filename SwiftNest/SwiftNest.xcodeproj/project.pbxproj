@@ -78,7 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C347FA7C21F7A5A2008C4E53 /* SwiftNest_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNest_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C347FA7C21F7A5A2008C4E53 /* SwiftNest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C347FA7E21F7A5A3008C4E53 /* SwiftNest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftNest.h; sourceTree = "<group>"; };
 		C347FA7F21F7A5A3008C4E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3D9B8EF21F398B3008D350C /* SwiftNest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,7 +178,7 @@
 				C3D9B8EF21F398B3008D350C /* SwiftNest.framework */,
 				C3D9B8F821F398B3008D350C /* SwiftNestTests.xctest */,
 				C3D9B94721F39A3B008D350C /* SwiftNest.framework */,
-				C347FA7C21F7A5A2008C4E53 /* SwiftNest_tvOS.framework */,
+				C347FA7C21F7A5A2008C4E53 /* SwiftNest.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -354,7 +354,7 @@
 			);
 			name = "SwiftNest tvOS";
 			productName = SwiftNest;
-			productReference = C347FA7C21F7A5A2008C4E53 /* SwiftNest_tvOS.framework */;
+			productReference = C347FA7C21F7A5A2008C4E53 /* SwiftNest.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C3D9B8EE21F398B3008D350C /* SwiftNest macOS */ = {
@@ -598,7 +598,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.repairward.SwiftNest;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftNest;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -625,7 +625,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.repairward.SwiftNest;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftNest;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
