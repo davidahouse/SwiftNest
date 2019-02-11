@@ -80,7 +80,8 @@ public class NetworkService<T: NetworkRequest> {
         }
         if responseDataLogging {
             if let body = request.httpBody {
-                let dataString = String(data: body, encoding: .utf8)
+                logDetail(">>> Data Length:", body.count)
+                let dataString = String(data: body.prefix(10000), encoding: .utf8)
                 logDetail(">>> Data:", dataString)
             }
         }

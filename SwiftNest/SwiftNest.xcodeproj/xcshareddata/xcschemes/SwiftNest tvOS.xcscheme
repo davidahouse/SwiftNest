@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C347FA7B21F7A5A2008C4E53"
-               BuildableName = "SwiftNest_tvOS.framework"
+               BuildableName = "SwiftNest.framework"
                BlueprintName = "SwiftNest tvOS"
                ReferencedContainer = "container:SwiftNest.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C347FA7B21F7A5A2008C4E53"
-            BuildableName = "SwiftNest_tvOS.framework"
+            BuildableName = "SwiftNest.framework"
             BlueprintName = "SwiftNest tvOS"
             ReferencedContainer = "container:SwiftNest.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C347FA7B21F7A5A2008C4E53"
-            BuildableName = "SwiftNest_tvOS.framework"
+            BuildableName = "SwiftNest.framework"
             BlueprintName = "SwiftNest tvOS"
             ReferencedContainer = "container:SwiftNest.xcodeproj">
          </BuildableReference>

@@ -20,6 +20,7 @@ public enum NetworkRequestEncoding {
     case form(formElements: [String: CustomStringConvertible])
     case multipartForm(elements: [MultipartFormElement])
     case json(data: Data)
+    case codable(object: NetworkEncodable)
 }
 
 public protocol NetworkRequest {
@@ -27,6 +28,12 @@ public protocol NetworkRequest {
     var endpoint: String { get }
     var method: NetworkRequestMethod { get }
     var bodyEncoding: NetworkRequestEncoding { get }
+
+    func url() -> URL?
+}
+
+public protocol NetworkEncodable {
+    func toData() -> Data?
 }
 
 public struct MultipartFormElement {
@@ -35,14 +42,14 @@ public struct MultipartFormElement {
     let contentType: String?
     let data: Data
 
-    init(name: String, value: String) {
+    public init(name: String, value: String) {
         self.name = name
         self.fileName = nil
         self.contentType = nil
         self.data = value.data(using: .utf8) ?? Data()
     }
 
-    init(name: String, fileName: String, contentType: String, data: Data) {
+    public init(name: String, fileName: String, contentType: String, data: Data) {
         self.name = name
         self.fileName = fileName
         self.contentType = contentType
@@ -91,6 +98,9 @@ extension NetworkRequest {
         case .json(let data):
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             request.httpBody = data
+        case .codable(let object):
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            request.httpBody = object.toData() ?? Data()
         case .multipartForm(let elements):
             let boundary = "Boundary-" + UUID().uuidString.replacingOccurrences(of: "-", with: "")
             request.addValue("multipart/form-data; boundary=" + boundary, forHTTPHeaderField: "Content-Type")
@@ -112,8 +122,8 @@ extension NetworkRequest {
                 formData.append(element.data)
             }
 
-            formData.appendString("--" + boundary + "--\r\n")
-            request.addValue(String(formData.count), forHTTPHeaderField: "Content-Length")
+            formData.appendString("--" + boundary + "--")
+//            request.addValue(String(formData.count), forHTTPHeaderField: "Content-Length")
             request.httpBody = formData
         }
 
