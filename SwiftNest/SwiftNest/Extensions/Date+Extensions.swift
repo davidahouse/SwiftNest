@@ -19,33 +19,49 @@ extension Date {
             components.day == otherComponents.day
     }
 
-    static private var monthYearDateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MMM_yyyy"
-        return formatter
-    }()
-
-    static private var fullDateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MMM_dd_yyyy"
-        return formatter
-    }()
-
-    static private var fullDateAndTimeFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MMM_dd_yyyy_HH_mm_ss"
-        return formatter
-    }()
-
-    public func monthYearDateString() -> String {
-        return Date.monthYearDateFormatter.string(from: self)
+    public func isSameMonth(as otherDate: Date) -> Bool {
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month], from: self)
+        let otherComponents = calendar.dateComponents([.year, .month], from: otherDate)
+        return components.year == otherComponents.year &&
+            components.month == otherComponents.month
     }
 
-    public func fullDateString() -> String {
-        return Date.fullDateFormatter.string(from: self)
+    public static func dateFrom(year: Int, month: Int, day: Int) -> Date {
+        let calendar = Calendar.current
+        let parts = DateComponents(calendar: calendar, year: year, month: month, day: day)
+        return calendar.date(from: parts)!
     }
 
-    public func fullDateAndTimeString() -> String {
-        return Date.fullDateAndTimeFormatter.string(from: self)
+    public func firstDayOfMonth() -> Date {
+        let calendar = Calendar.current
+        var parts = calendar.dateComponents([.month,.year,.day], from: self)
+        parts.day = 1
+        return calendar.date(from: parts)!
+    }
+
+    public func addMonth(_ numberOfMonths: Int) -> Date {
+        let calendar = Calendar.current
+        return calendar.date(byAdding: DateComponents(month: numberOfMonths), to: self)!
+    }
+
+    public func addDay(_ numberOfDays: Int) -> Date {
+        let calendar = Calendar.current
+        return calendar.date(byAdding: DateComponents(day: numberOfDays), to: self)!
+    }
+
+    public func subtractMonth(_ numberOfMonths: Int) -> Date {
+        let calendar = Calendar.current
+        return calendar.date(byAdding: DateComponents(month: -numberOfMonths), to: self)!
+    }
+
+    public func allDaysInMonth() -> [Date] {
+        var results = [Date]()
+        var current = firstDayOfMonth()
+        while current.isSameMonth(as: self) {
+            results.append(current)
+            current = current.addDay(1)
+        }
+        return results
     }
 }

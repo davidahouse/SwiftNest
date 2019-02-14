@@ -29,11 +29,11 @@
 		C347FA9821F7A5E3008C4E53 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B91821F39976008D350C /* Data+Extensions.swift */; };
 		C347FA9921F7A5E7008C4E53 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B91321F3996D008D350C /* BaseCoordinator.swift */; };
 		C347FA9A21F7A5E8008C4E53 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B91321F3996D008D350C /* BaseCoordinator.swift */; };
+		C36073992213B612005BB59D /* DateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36073982213B612005BB59D /* DateExtensionsTests.swift */; };
 		C383976C2203E94800E50671 /* SimpleKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383976B2203E94800E50671 /* SimpleKeychain.swift */; };
 		C383976D2203E94800E50671 /* SimpleKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383976B2203E94800E50671 /* SimpleKeychain.swift */; };
 		C383976E2203E94800E50671 /* SimpleKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383976B2203E94800E50671 /* SimpleKeychain.swift */; };
 		C3D9B8F921F398B3008D350C /* SwiftNest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D9B8EF21F398B3008D350C /* SwiftNest.framework */; };
-		C3D9B8FE21F398B3008D350C /* SwiftNestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B8FD21F398B3008D350C /* SwiftNestTests.swift */; };
 		C3D9B90021F398B3008D350C /* SwiftNest.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D9B8F221F398B3008D350C /* SwiftNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3D9B91421F3996D008D350C /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B91321F3996D008D350C /* BaseCoordinator.swift */; };
 		C3D9B92A21F39976008D350C /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B91621F39976008D350C /* String+Extensions.swift */; };
@@ -87,12 +87,12 @@
 		C347FA7C21F7A5A2008C4E53 /* SwiftNest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C347FA7E21F7A5A3008C4E53 /* SwiftNest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftNest.h; sourceTree = "<group>"; };
 		C347FA7F21F7A5A3008C4E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C36073982213B612005BB59D /* DateExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionsTests.swift; sourceTree = "<group>"; };
 		C383976B2203E94800E50671 /* SimpleKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleKeychain.swift; sourceTree = "<group>"; };
 		C3D9B8EF21F398B3008D350C /* SwiftNest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D9B8F221F398B3008D350C /* SwiftNest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftNest.h; sourceTree = "<group>"; };
 		C3D9B8F321F398B3008D350C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3D9B8F821F398B3008D350C /* SwiftNestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3D9B8FD21F398B3008D350C /* SwiftNestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNestTests.swift; sourceTree = "<group>"; };
 		C3D9B8FF21F398B3008D350C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3D9B91321F3996D008D350C /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		C3D9B91621F39976008D350C /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -169,6 +169,14 @@
 			path = SwiftNest;
 			sourceTree = "<group>";
 		};
+		C36073972213B5DE005BB59D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C36073982213B612005BB59D /* DateExtensionsTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C38397662203E73C00E50671 /* Security */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,7 +227,7 @@
 		C3D9B8FC21F398B3008D350C /* SwiftNestTests */ = {
 			isa = PBXGroup;
 			children = (
-				C3D9B8FD21F398B3008D350C /* SwiftNestTests.swift */,
+				C36073972213B5DE005BB59D /* Extensions */,
 				C3D9B8FF21F398B3008D350C /* Info.plist */,
 			);
 			path = SwiftNestTests;
@@ -567,7 +575,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3D9B8FE21F398B3008D350C /* SwiftNestTests.swift in Sources */,
+				C36073992213B612005BB59D /* DateExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
