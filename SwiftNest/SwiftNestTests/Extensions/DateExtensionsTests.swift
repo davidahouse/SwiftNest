@@ -34,4 +34,11 @@ class DateExtensionsTests: XCTestCase {
         XCTAssertEqual(allDaysInMonth[0], Date.dateFrom(year: 2019, month: 1, day: 1))
         XCTAssertEqual(allDaysInMonth[30], Date.dateFrom(year: 2019, month: 1, day: 31))
     }
+
+    func testIsSameDayCanMatchDates() {
+        let nextDate = referenceDate.addDay(1)
+        let secondaryDate = nextDate.subtractDay(1)
+        XCTAssertFalse(referenceDate.isSameDay(as: nextDate))
+        XCTAssertTrue(referenceDate.isSameDay(as: secondaryDate))
+    }
 }
