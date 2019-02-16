@@ -55,6 +55,11 @@ extension Date {
         return calendar.date(byAdding: DateComponents(month: -numberOfMonths), to: self)!
     }
 
+    public func subtractDay(_ numberOfDays: Int) -> Date {
+        let calendar = Calendar.current
+        return calendar.date(byAdding: DateComponents(day: -numberOfDays), to: self)!
+    }
+
     public func allDaysInMonth() -> [Date] {
         var results = [Date]()
         var current = firstDayOfMonth()
