@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3p2-9n-0gU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Progress View Controller-->
+        <scene sceneID="bh8-7W-DUz">
+            <objects>
+                <viewController id="3p2-9n-0gU" customClass="ProgressViewController" customModule="SwiftNest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CTt-Qp-2Pi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QbI-1h-aHa">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XuJ-C0-aE9">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q96-vo-i1k">
+                                            <rect key="frame" x="67.5" y="203.5" width="240" height="240"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f7g-QO-IyG">
+                                                    <rect key="frame" x="6" y="6" width="228" height="228"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hT-uH-47T">
+                                                            <rect key="frame" x="0.0" y="0.0" width="228" height="76"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2h8-Je-Fnp">
+                                                            <rect key="frame" x="0.0" y="76" width="228" height="2"/>
+                                                        </progressView>
+                                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="E87-xC-0Je">
+                                                            <rect key="frame" x="0.0" y="78" width="228" height="100"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="100" id="pJe-wS-w26"/>
+                                                            </constraints>
+                                                        </activityIndicatorView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTx-sf-kRv">
+                                                            <rect key="frame" x="0.0" y="178" width="228" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="4Mp-GQ-cgf"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Cancel"/>
+                                                            <connections>
+                                                                <action selector="cancelPressed:" destination="3p2-9n-0gU" eventType="touchUpInside" id="AC4-zk-sVN"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="240" id="JWw-IH-5Kq"/>
+                                                <constraint firstItem="f7g-QO-IyG" firstAttribute="top" secondItem="Q96-vo-i1k" secondAttribute="top" constant="6" id="Oh2-No-cs1"/>
+                                                <constraint firstItem="f7g-QO-IyG" firstAttribute="leading" secondItem="Q96-vo-i1k" secondAttribute="leading" constant="6" id="Vhj-Pk-5yn"/>
+                                                <constraint firstAttribute="width" constant="240" id="aYn-uj-U1F"/>
+                                                <constraint firstAttribute="bottom" secondItem="f7g-QO-IyG" secondAttribute="bottom" constant="6" id="pks-DK-WEc"/>
+                                                <constraint firstAttribute="trailing" secondItem="f7g-QO-IyG" secondAttribute="trailing" constant="6" id="upd-Ad-g6W"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="Q96-vo-i1k" firstAttribute="centerY" secondItem="XuJ-C0-aE9" secondAttribute="centerY" id="gEV-j7-xKs"/>
+                                        <constraint firstItem="Q96-vo-i1k" firstAttribute="centerX" secondItem="XuJ-C0-aE9" secondAttribute="centerX" id="joz-j5-Zo5"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Xz-dB-xoV" firstAttribute="bottom" secondItem="QbI-1h-aHa" secondAttribute="bottom" id="5ZF-Kf-L4L"/>
+                            <constraint firstItem="QbI-1h-aHa" firstAttribute="top" secondItem="5Xz-dB-xoV" secondAttribute="top" id="Vv3-1U-IfE"/>
+                            <constraint firstItem="5Xz-dB-xoV" firstAttribute="trailing" secondItem="QbI-1h-aHa" secondAttribute="trailing" id="cLz-AR-zgl"/>
+                            <constraint firstItem="QbI-1h-aHa" firstAttribute="leading" secondItem="5Xz-dB-xoV" secondAttribute="leading" id="wM5-lk-7CN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Xz-dB-xoV"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="E87-xC-0Je" id="wfZ-d2-wJ8"/>
+                        <outlet property="cancelButton" destination="eTx-sf-kRv" id="cJA-KH-njV"/>
+                        <outlet property="contentView" destination="Q96-vo-i1k" id="QVH-18-bGl"/>
+                        <outlet property="messageLabel" destination="2hT-uH-47T" id="yv8-sg-1ZK"/>
+                        <outlet property="progressView" destination="2h8-Je-Fnp" id="eYL-uE-po9"/>
+                        <outlet property="visualEffectView" destination="QbI-1h-aHa" id="wsH-KS-LYn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ReD-VM-EoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.200000000000003" y="-243.32833583208398"/>
+        </scene>
+    </scenes>
+</document>
