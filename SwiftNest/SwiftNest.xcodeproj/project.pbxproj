@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C314B4E22238807F000BDE34 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C314B4E12238807F000BDE34 /* UIView+Extensions.swift */; };
+		C314B4E32238807F000BDE34 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C314B4E12238807F000BDE34 /* UIView+Extensions.swift */; };
 		C347FA8021F7A5A3008C4E53 /* SwiftNest.h in Headers */ = {isa = PBXBuildFile; fileRef = C347FA7E21F7A5A3008C4E53 /* SwiftNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C347FA8421F7A5B5008C4E53 /* FileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F0B4CE21F4B3E80048150A /* FileProvider.swift */; };
 		C347FA8521F7A5B5008C4E53 /* FileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F0B4CE21F4B3E80048150A /* FileProvider.swift */; };
@@ -93,6 +95,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C314B4E12238807F000BDE34 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		C347FA7C21F7A5A2008C4E53 /* SwiftNest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C347FA7E21F7A5A3008C4E53 /* SwiftNest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftNest.h; sourceTree = "<group>"; };
 		C347FA7F21F7A5A3008C4E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -286,6 +289,7 @@
 				C3D9B91721F39976008D350C /* Date+Extensions.swift */,
 				C3D9B91821F39976008D350C /* Data+Extensions.swift */,
 				C3FDB0BA221846EA00EF16C0 /* NSView+Extensions.swift */,
+				C314B4E12238807F000BDE34 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -565,6 +569,7 @@
 				C347FA9A21F7A5E8008C4E53 /* BaseCoordinator.swift in Sources */,
 				C347FA8F21F7A5CC008C4E53 /* NetworkRequest.swift in Sources */,
 				C347FA9221F7A5D6008C4E53 /* URL+Extension.swift in Sources */,
+				C314B4E32238807F000BDE34 /* UIView+Extensions.swift in Sources */,
 				C347FA9621F7A5DC008C4E53 /* Date+Extensions.swift in Sources */,
 				C347FA8921F7A5C3008C4E53 /* Font.swift in Sources */,
 				C347FA8621F7A5B9008C4E53 /* Regex.swift in Sources */,
@@ -629,6 +634,7 @@
 			files = (
 				C3B34203222AC33900C119F5 /* ProgressViewModel.swift in Sources */,
 				C3D9B96821F3A9E9008D350C /* URL+Extension.swift in Sources */,
+				C314B4E22238807F000BDE34 /* UIView+Extensions.swift in Sources */,
 				C383976D2203E94800E50671 /* SimpleKeychain.swift in Sources */,
 				C347FA9021F7A5D3008C4E53 /* FileManager+Extension.swift in Sources */,
 				C347FA9921F7A5E7008C4E53 /* BaseCoordinator.swift in Sources */,
