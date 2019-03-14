@@ -16,6 +16,7 @@ public protocol ViewModelConsumer {
     func removeFromSuperview()
     func presentModal(_ viewControllerToPresent: ViewModelConsumer, animated flag: Bool, completion: (() -> Void)?)
     func dismissModal(animated flag: Bool, completion: (() -> Void)?)
+    func push(_ viewControllerToPush: ViewModelConsumer, animated flag: Bool)
 }
 
 extension UIViewController: ViewModelConsumer {
@@ -38,6 +39,12 @@ extension UIViewController: ViewModelConsumer {
 
     public func dismissModal(animated flag: Bool, completion: (() -> Void)? = nil) {
         self.dismiss(animated: flag, completion: completion)
+    }
+
+    public func push(_ viewControllerToPush: ViewModelConsumer, animated flag: Bool) {
+        if let pushViewController = viewControllerToPush as? UIViewController {
+            self.navigationController?.pushViewController(pushViewController, animated: flag)
+        }
     }
 }
 
