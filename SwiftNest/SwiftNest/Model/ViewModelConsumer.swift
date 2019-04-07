@@ -26,7 +26,7 @@ extension UIViewController: ViewModelConsumer {
             return view
         }
     }
-
+    
     public func removeFromSuperview() {
         consumerView?.removeFromSuperview()
     }
