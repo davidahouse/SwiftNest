@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		949229CF2256A61E0077A27F /* DetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949229CE2256A61E0077A27F /* DetailListViewController.swift */; };
+		949229D12256A6420077A27F /* DetailList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949229D02256A6420077A27F /* DetailList.storyboard */; };
+		949229D32256A6560077A27F /* DetailListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949229D22256A6560077A27F /* DetailListViewModel.swift */; };
+		949229D52256A6620077A27F /* DetailListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949229D42256A6620077A27F /* DetailListCoordinator.swift */; };
+		949229DB2257F61C0077A27F /* SectionedDetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949229DA2257F61C0077A27F /* SectionedDetailListViewController.swift */; };
+		949229DD2257F62B0077A27F /* SectionedDetailList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949229DC2257F62B0077A27F /* SectionedDetailList.storyboard */; };
+		949229DF2257F6400077A27F /* SectionedDetailListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949229DE2257F6400077A27F /* SectionedDetailListViewModel.swift */; };
+		949229E12257F6520077A27F /* SectionedDetailListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949229E02257F6520077A27F /* SectionedDetailListCoordinator.swift */; };
 		C314B4E22238807F000BDE34 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C314B4E12238807F000BDE34 /* UIView+Extensions.swift */; };
 		C314B4E32238807F000BDE34 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C314B4E12238807F000BDE34 /* UIView+Extensions.swift */; };
 		C347FA8021F7A5A3008C4E53 /* SwiftNest.h in Headers */ = {isa = PBXBuildFile; fileRef = C347FA7E21F7A5A3008C4E53 /* SwiftNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -95,6 +103,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		949229CE2256A61E0077A27F /* DetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListViewController.swift; sourceTree = "<group>"; };
+		949229D02256A6420077A27F /* DetailList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailList.storyboard; sourceTree = "<group>"; };
+		949229D22256A6560077A27F /* DetailListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListViewModel.swift; sourceTree = "<group>"; };
+		949229D42256A6620077A27F /* DetailListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCoordinator.swift; sourceTree = "<group>"; };
+		949229DA2257F61C0077A27F /* SectionedDetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedDetailListViewController.swift; sourceTree = "<group>"; };
+		949229DC2257F62B0077A27F /* SectionedDetailList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SectionedDetailList.storyboard; sourceTree = "<group>"; };
+		949229DE2257F6400077A27F /* SectionedDetailListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedDetailListViewModel.swift; sourceTree = "<group>"; };
+		949229E02257F6520077A27F /* SectionedDetailListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedDetailListCoordinator.swift; sourceTree = "<group>"; };
 		C314B4E12238807F000BDE34 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		C347FA7C21F7A5A2008C4E53 /* SwiftNest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C347FA7E21F7A5A3008C4E53 /* SwiftNest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftNest.h; sourceTree = "<group>"; };
@@ -179,6 +195,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		949229CC2256A5CA0077A27F /* DetailListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				949229CE2256A61E0077A27F /* DetailListViewController.swift */,
+				949229D02256A6420077A27F /* DetailList.storyboard */,
+				949229D22256A6560077A27F /* DetailListViewModel.swift */,
+				949229D42256A6620077A27F /* DetailListCoordinator.swift */,
+			);
+			path = DetailListViewController;
+			sourceTree = "<group>";
+		};
+		949229CD2256A5E10077A27F /* SectionedDetailListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				949229DA2257F61C0077A27F /* SectionedDetailListViewController.swift */,
+				949229DC2257F62B0077A27F /* SectionedDetailList.storyboard */,
+				949229DE2257F6400077A27F /* SectionedDetailListViewModel.swift */,
+				949229E02257F6520077A27F /* SectionedDetailListCoordinator.swift */,
+			);
+			path = SectionedDetailListViewController;
+			sourceTree = "<group>";
+		};
 		C347FA7D21F7A5A3008C4E53 /* SwiftNest */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +254,8 @@
 		C3B341FF222AC26C00C119F5 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				949229CD2256A5E10077A27F /* SectionedDetailListViewController */,
+				949229CC2256A5CA0077A27F /* DetailListViewController */,
 				C3B34200222AC30B00C119F5 /* ProgressViewController.swift */,
 				C3B34202222AC33900C119F5 /* ProgressViewModel.swift */,
 				C3B34206222AC3FE00C119F5 /* ProgressViewController.storyboard */,
@@ -553,6 +593,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3B34207222AC3FE00C119F5 /* ProgressViewController.storyboard in Resources */,
+				949229DD2257F62B0077A27F /* SectionedDetailList.storyboard in Resources */,
+				949229D12256A6420077A27F /* DetailList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,11 +675,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3B34203222AC33900C119F5 /* ProgressViewModel.swift in Sources */,
+				949229CF2256A61E0077A27F /* DetailListViewController.swift in Sources */,
 				C3D9B96821F3A9E9008D350C /* URL+Extension.swift in Sources */,
 				C314B4E22238807F000BDE34 /* UIView+Extensions.swift in Sources */,
+				949229E12257F6520077A27F /* SectionedDetailListCoordinator.swift in Sources */,
 				C383976D2203E94800E50671 /* SimpleKeychain.swift in Sources */,
 				C347FA9021F7A5D3008C4E53 /* FileManager+Extension.swift in Sources */,
+				949229DB2257F61C0077A27F /* SectionedDetailListViewController.swift in Sources */,
 				C347FA9921F7A5E7008C4E53 /* BaseCoordinator.swift in Sources */,
+				949229D32256A6560077A27F /* DetailListViewModel.swift in Sources */,
 				C3D9B97721F3AA36008D350C /* Regex.swift in Sources */,
 				C347FA8C21F7A5C9008C4E53 /* NetworkService.swift in Sources */,
 				C347FA9521F7A5DB008C4E53 /* Date+Extensions.swift in Sources */,
@@ -645,10 +691,12 @@
 				C3B3420C222AC76300C119F5 /* ViewModelConsumer.swift in Sources */,
 				C347FA8421F7A5B5008C4E53 /* FileProvider.swift in Sources */,
 				C3D9B97321F3AA12008D350C /* Color.swift in Sources */,
+				949229DF2257F6400077A27F /* SectionedDetailListViewModel.swift in Sources */,
 				C3D9B96E21F3AA0A008D350C /* Image.swift in Sources */,
 				C3B34201222AC30B00C119F5 /* ProgressViewController.swift in Sources */,
 				C347FA9721F7A5E3008C4E53 /* Data+Extensions.swift in Sources */,
 				C3E181B32210A652007199B9 /* AppInstanceId.swift in Sources */,
+				949229D52256A6620077A27F /* DetailListCoordinator.swift in Sources */,
 				C347FA8E21F7A5CC008C4E53 /* NetworkRequest.swift in Sources */,
 				C3D9B97021F3AA0A008D350C /* Font.swift in Sources */,
 				C3B34209222AC72000C119F5 /* ProgressView.swift in Sources */,
