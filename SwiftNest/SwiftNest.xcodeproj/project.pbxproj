@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		947F18E5225A374300C67053 /* UserAgentString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947F18E4225A374300C67053 /* UserAgentString.swift */; };
+		947F18E6225A374300C67053 /* UserAgentString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947F18E4225A374300C67053 /* UserAgentString.swift */; };
+		947F18E7225A374300C67053 /* UserAgentString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947F18E4225A374300C67053 /* UserAgentString.swift */; };
 		949229CF2256A61E0077A27F /* DetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949229CE2256A61E0077A27F /* DetailListViewController.swift */; };
 		949229D12256A6420077A27F /* DetailList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949229D02256A6420077A27F /* DetailList.storyboard */; };
 		949229D32256A6560077A27F /* DetailListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949229D22256A6560077A27F /* DetailListViewModel.swift */; };
@@ -103,6 +106,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		947F18E4225A374300C67053 /* UserAgentString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgentString.swift; sourceTree = "<group>"; };
 		949229CE2256A61E0077A27F /* DetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListViewController.swift; sourceTree = "<group>"; };
 		949229D02256A6420077A27F /* DetailList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailList.storyboard; sourceTree = "<group>"; };
 		949229D22256A6560077A27F /* DetailListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListViewModel.swift; sourceTree = "<group>"; };
@@ -195,6 +199,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		947F18E3225A372C00C67053 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				947F18E4225A374300C67053 /* UserAgentString.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
 		949229CC2256A5CA0077A27F /* DetailListViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +301,7 @@
 		C3D9B8F121F398B3008D350C /* SwiftNest */ = {
 			isa = PBXGroup;
 			children = (
+				947F18E3225A372C00C67053 /* Web */,
 				C3B341FE222AC26500C119F5 /* View */,
 				C38397662203E73C00E50671 /* Security */,
 				C3F0B4CD21F4B3E80048150A /* Providers */,
@@ -618,6 +631,7 @@
 				C347FA8721F7A5BE008C4E53 /* Color.swift in Sources */,
 				C3B3420D222AC76300C119F5 /* ViewModelConsumer.swift in Sources */,
 				C347FA8B21F7A5C6008C4E53 /* NetworkResponse.swift in Sources */,
+				947F18E7225A374300C67053 /* UserAgentString.swift in Sources */,
 				C347FA9821F7A5E3008C4E53 /* Data+Extensions.swift in Sources */,
 				C3E181B42210A652007199B9 /* AppInstanceId.swift in Sources */,
 				C347FA8D21F7A5CA008C4E53 /* NetworkService.swift in Sources */,
@@ -636,6 +650,7 @@
 				C3D9B92D21F39976008D350C /* EditDialogViewController.swift in Sources */,
 				C3D9B92C21F39976008D350C /* Data+Extensions.swift in Sources */,
 				C3D9B93F21F3997D008D350C /* NetworkService.swift in Sources */,
+				947F18E5225A374300C67053 /* UserAgentString.swift in Sources */,
 				C3D9B93121F39976008D350C /* Formatter.swift in Sources */,
 				C3F0B4CF21F4B3E80048150A /* FileProvider.swift in Sources */,
 				C3FDB0BB221846EA00EF16C0 /* NSView+Extensions.swift in Sources */,
@@ -678,6 +693,7 @@
 				949229CF2256A61E0077A27F /* DetailListViewController.swift in Sources */,
 				C3D9B96821F3A9E9008D350C /* URL+Extension.swift in Sources */,
 				C314B4E22238807F000BDE34 /* UIView+Extensions.swift in Sources */,
+				947F18E6225A374300C67053 /* UserAgentString.swift in Sources */,
 				949229E12257F6520077A27F /* SectionedDetailListCoordinator.swift in Sources */,
 				C383976D2203E94800E50671 /* SimpleKeychain.swift in Sources */,
 				C347FA9021F7A5D3008C4E53 /* FileManager+Extension.swift in Sources */,
