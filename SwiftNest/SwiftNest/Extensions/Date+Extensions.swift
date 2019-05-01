@@ -11,14 +11,9 @@ import Foundation
 extension Date {
 
     public func isSameDay(as otherDate: Date) -> Bool {
-        let calendar = Calendar.current
-        let components = calendar.dateComponents([.year, .month, .day], from: self)
-        let otherComponents = calendar.dateComponents([.year, .month, .day], from: otherDate)
-        return components.year == otherComponents.year &&
-            components.month == otherComponents.month &&
-            components.day == otherComponents.day
+        return Calendar.current.isDate(self, inSameDayAs: otherDate)
     }
-
+    
     public func isSameMonth(as otherDate: Date) -> Bool {
         let calendar = Calendar.current
         let components = calendar.dateComponents([.year, .month], from: self)
