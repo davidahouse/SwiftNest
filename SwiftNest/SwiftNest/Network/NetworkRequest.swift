@@ -26,10 +26,9 @@ public enum NetworkRequestEncoding {
 public protocol NetworkRequest {
     var host: String { get }
     var endpoint: String { get }
+    var queryString: String { get }
     var method: NetworkRequestMethod { get }
     var bodyEncoding: NetworkRequestEncoding { get }
-
-    func url() -> URL?
 }
 
 public protocol NetworkEncodable {
@@ -61,20 +60,7 @@ extension NetworkRequest {
 
     public func createRequest(headers: [String: CustomStringConvertible] = [:]) -> URLRequest? {
 
-        guard let encodedEndpoint = endpoint.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) else {
-            return nil
-        }
-
-        let url: URL? = {
-
-            if encodedEndpoint.hasPrefix("/") {
-                return URL(string: "\(host)\(encodedEndpoint)")
-            } else {
-                return URL(string: "\(host)/\(encodedEndpoint)")
-            }
-        }()
-
-        guard let requestURL = url else {
+        guard let requestURL = url() else {
             return nil
         }
 
@@ -132,5 +118,22 @@ extension NetworkRequest {
         }
 
         return request
+    }
+
+    public func url() -> URL? {
+
+        guard let encodedEndpoint = endpoint.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) else {
+            return nil
+        }
+
+        guard let encodedQueryString = queryString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
+            return nil
+        }
+
+        if encodedEndpoint.hasPrefix("/") {
+            return URL(string: "\(host)\(encodedEndpoint)\(encodedQueryString)")
+        } else {
+            return URL(string: "\(host)/\(encodedEndpoint)\(encodedQueryString)")
+        }
     }
 }
