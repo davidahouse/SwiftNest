@@ -18,6 +18,8 @@
 		949229DD2257F62B0077A27F /* SectionedDetailList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949229DC2257F62B0077A27F /* SectionedDetailList.storyboard */; };
 		949229DF2257F6400077A27F /* SectionedDetailListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949229DE2257F6400077A27F /* SectionedDetailListViewModel.swift */; };
 		949229E12257F6520077A27F /* SectionedDetailListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949229E02257F6520077A27F /* SectionedDetailListCoordinator.swift */; };
+		94F03AA522663D1D008C8EE8 /* DetailListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949229D22256A6560077A27F /* DetailListViewModel.swift */; };
+		94F03AA622663D26008C8EE8 /* SectionedDetailListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949229DE2257F6400077A27F /* SectionedDetailListViewModel.swift */; };
 		C314B4E22238807F000BDE34 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C314B4E12238807F000BDE34 /* UIView+Extensions.swift */; };
 		C314B4E32238807F000BDE34 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C314B4E12238807F000BDE34 /* UIView+Extensions.swift */; };
 		C347FA8021F7A5A3008C4E53 /* SwiftNest.h in Headers */ = {isa = PBXBuildFile; fileRef = C347FA7E21F7A5A3008C4E53 /* SwiftNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -644,6 +646,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3D9B93421F39976008D350C /* EditDialogCoordinator.swift in Sources */,
+				94F03AA522663D1D008C8EE8 /* DetailListViewModel.swift in Sources */,
 				C3D9B93921F39976008D350C /* Listable.swift in Sources */,
 				C3D9B96F21F3AA0A008D350C /* Font.swift in Sources */,
 				C3D9B92A21F39976008D350C /* StringArrayListable.swift in Sources */,
@@ -656,6 +659,7 @@
 				C3FDB0BB221846EA00EF16C0 /* NSView+Extensions.swift in Sources */,
 				C3D9B93321F39976008D350C /* EditDetails.swift in Sources */,
 				C3D9B93021F39976008D350C /* Editable.swift in Sources */,
+				94F03AA622663D26008C8EE8 /* SectionedDetailListViewModel.swift in Sources */,
 				C3F0B4D121F4B3F10048150A /* FileManager+Extension.swift in Sources */,
 				C3D9B96D21F3AA0A008D350C /* Image.swift in Sources */,
 				C3D9B92F21F39976008D350C /* EditDialogWindowController.swift in Sources */,
