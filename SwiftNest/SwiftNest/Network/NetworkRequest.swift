@@ -122,7 +122,7 @@ extension NetworkRequest {
                 formData.append(element.data)
             }
 
-            formData.appendString("--" + boundary + "--")
+            formData.appendString("\r\n--" + boundary + "--")
 //            request.addValue(String(formData.count), forHTTPHeaderField: "Content-Length")
             request.httpBody = formData
         }
