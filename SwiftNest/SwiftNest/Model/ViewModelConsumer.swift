@@ -17,6 +17,7 @@ public protocol ViewModelConsumer {
     func presentModal(_ viewControllerToPresent: ViewModelConsumer, animated flag: Bool, completion: (() -> Void)?)
     func dismissModal(animated flag: Bool, completion: (() -> Void)?)
     func push(_ viewControllerToPush: ViewModelConsumer, animated flag: Bool)
+    func showDetail(_ viewController: ViewModelConsumer)
 }
 
 extension UIViewController: ViewModelConsumer {
@@ -42,8 +43,20 @@ extension UIViewController: ViewModelConsumer {
     }
 
     public func push(_ viewControllerToPush: ViewModelConsumer, animated flag: Bool) {
+
         if let pushViewController = viewControllerToPush as? UIViewController {
-            self.navigationController?.pushViewController(pushViewController, animated: flag)
+
+            if let navController = self as? UINavigationController {
+                navController.pushViewController(pushViewController, animated: true)
+            } else {
+                self.navigationController?.pushViewController(pushViewController, animated: flag)
+            }
+        }
+    }
+
+    public func showDetail(_ viewController: ViewModelConsumer) {
+        if let viewController = viewController as? UIViewController {
+            showDetailViewController(viewController, sender: self)
         }
     }
 }
