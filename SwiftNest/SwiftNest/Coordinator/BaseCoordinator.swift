@@ -31,6 +31,12 @@ open class BaseCoordinator<T, D> {
         childCoordinators.append(coordinator)
     }
 
+    public func findChild(_ coordinatorID: String) -> BaseCoordinator? {
+        return childCoordinators.first(where: { (coordinator) -> Bool in
+            coordinator.coordinatorID == coordinatorID
+        })
+    }
+
     /**
      send an event to the entire coordinator chain while also giving the
      coordinator a chance to handle it
