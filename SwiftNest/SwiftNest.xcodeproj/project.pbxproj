@@ -20,6 +20,8 @@
 		949229E12257F6520077A27F /* SectionedDetailListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949229E02257F6520077A27F /* SectionedDetailListCoordinator.swift */; };
 		94F03AA522663D1D008C8EE8 /* DetailListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949229D22256A6560077A27F /* DetailListViewModel.swift */; };
 		94F03AA622663D26008C8EE8 /* SectionedDetailListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949229DE2257F6400077A27F /* SectionedDetailListViewModel.swift */; };
+		94F7C97522A2E6AB0092A7E3 /* SimpleGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7C97422A2E6AB0092A7E3 /* SimpleGradientView.swift */; };
+		94F7C97622A2E6AB0092A7E3 /* SimpleGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7C97422A2E6AB0092A7E3 /* SimpleGradientView.swift */; };
 		C314B4E22238807F000BDE34 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C314B4E12238807F000BDE34 /* UIView+Extensions.swift */; };
 		C314B4E32238807F000BDE34 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C314B4E12238807F000BDE34 /* UIView+Extensions.swift */; };
 		C347FA8021F7A5A3008C4E53 /* SwiftNest.h in Headers */ = {isa = PBXBuildFile; fileRef = C347FA7E21F7A5A3008C4E53 /* SwiftNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -117,6 +119,7 @@
 		949229DC2257F62B0077A27F /* SectionedDetailList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SectionedDetailList.storyboard; sourceTree = "<group>"; };
 		949229DE2257F6400077A27F /* SectionedDetailListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedDetailListViewModel.swift; sourceTree = "<group>"; };
 		949229E02257F6520077A27F /* SectionedDetailListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedDetailListCoordinator.swift; sourceTree = "<group>"; };
+		94F7C97422A2E6AB0092A7E3 /* SimpleGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGradientView.swift; sourceTree = "<group>"; };
 		C314B4E12238807F000BDE34 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		C347FA7C21F7A5A2008C4E53 /* SwiftNest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C347FA7E21F7A5A3008C4E53 /* SwiftNest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftNest.h; sourceTree = "<group>"; };
@@ -274,6 +277,7 @@
 				C3B34202222AC33900C119F5 /* ProgressViewModel.swift */,
 				C3B34206222AC3FE00C119F5 /* ProgressViewController.storyboard */,
 				C3B34208222AC72000C119F5 /* ProgressView.swift */,
+				94F7C97422A2E6AB0092A7E3 /* SimpleGradientView.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -624,6 +628,7 @@
 			files = (
 				C347FA8521F7A5B5008C4E53 /* FileProvider.swift in Sources */,
 				C383976E2203E94800E50671 /* SimpleKeychain.swift in Sources */,
+				94F7C97622A2E6AB0092A7E3 /* SimpleGradientView.swift in Sources */,
 				C347FA8821F7A5C0008C4E53 /* Image.swift in Sources */,
 				C347FA9A21F7A5E8008C4E53 /* BaseCoordinator.swift in Sources */,
 				C347FA8F21F7A5CC008C4E53 /* NetworkRequest.swift in Sources */,
@@ -709,6 +714,7 @@
 				C3D9B97721F3AA36008D350C /* Regex.swift in Sources */,
 				C347FA8C21F7A5C9008C4E53 /* NetworkService.swift in Sources */,
 				C347FA9521F7A5DB008C4E53 /* Date+Extensions.swift in Sources */,
+				94F7C97522A2E6AB0092A7E3 /* SimpleGradientView.swift in Sources */,
 				C347FA8A21F7A5C6008C4E53 /* NetworkResponse.swift in Sources */,
 				C3B3420C222AC76300C119F5 /* ViewModelConsumer.swift in Sources */,
 				C347FA8421F7A5B5008C4E53 /* FileProvider.swift in Sources */,
