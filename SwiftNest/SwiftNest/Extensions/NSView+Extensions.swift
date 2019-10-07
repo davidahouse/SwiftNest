@@ -10,7 +10,7 @@ import AppKit
 
 public extension NSView {
 
-    public func constrain(to view: NSView, top: CGFloat = 0.0, bottom: CGFloat = 0.0, left: CGFloat = 0.0, right: CGFloat = 0.0) {
+    func constrain(to view: NSView, top: CGFloat = 0.0, bottom: CGFloat = 0.0, left: CGFloat = 0.0, right: CGFloat = 0.0) {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.topAnchor.constraint(equalTo: view.topAnchor, constant: top).isActive = true
         self.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: bottom).isActive = true
@@ -18,7 +18,7 @@ public extension NSView {
         self.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: right).isActive = true
     }
 
-    public func constrainToTopHalf(of view: NSView, top: CGFloat = 0.0, bottom: CGFloat = 0.0, left: CGFloat = 0.0, right: CGFloat = 0.0) {
+    func constrainToTopHalf(of view: NSView, top: CGFloat = 0.0, bottom: CGFloat = 0.0, left: CGFloat = 0.0, right: CGFloat = 0.0) {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.topAnchor.constraint(equalTo: view.topAnchor, constant: top).isActive = true
         self.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
@@ -26,7 +26,7 @@ public extension NSView {
         self.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: right).isActive = true
     }
 
-    public func constrainToBottomHalf(of view: NSView, top: CGFloat = 0.0, bottom: CGFloat = 0.0, left: CGFloat = 0.0, right: CGFloat = 0.0) {
+    func constrainToBottomHalf(of view: NSView, top: CGFloat = 0.0, bottom: CGFloat = 0.0, left: CGFloat = 0.0, right: CGFloat = 0.0) {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: bottom).isActive = true
         self.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
