@@ -55,6 +55,9 @@
 		C3B3420B222AC76300C119F5 /* ViewModelConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B3420A222AC76300C119F5 /* ViewModelConsumer.swift */; };
 		C3B3420C222AC76300C119F5 /* ViewModelConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B3420A222AC76300C119F5 /* ViewModelConsumer.swift */; };
 		C3B3420D222AC76300C119F5 /* ViewModelConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B3420A222AC76300C119F5 /* ViewModelConsumer.swift */; };
+		C3D70B8A234ABFF000CB9679 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D70B89234ABFF000CB9679 /* Logger.swift */; };
+		C3D70B8B234ABFF000CB9679 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D70B89234ABFF000CB9679 /* Logger.swift */; };
+		C3D70B8C234ABFF000CB9679 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D70B89234ABFF000CB9679 /* Logger.swift */; };
 		C3D9B8F921F398B3008D350C /* SwiftNest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D9B8EF21F398B3008D350C /* SwiftNest.framework */; };
 		C3D9B90021F398B3008D350C /* SwiftNest.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D9B8F221F398B3008D350C /* SwiftNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3D9B91421F3996D008D350C /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9B91321F3996D008D350C /* BaseCoordinator.swift */; };
@@ -128,6 +131,7 @@
 		C3B34206222AC3FE00C119F5 /* ProgressViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProgressViewController.storyboard; sourceTree = "<group>"; };
 		C3B34208222AC72000C119F5 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		C3B3420A222AC76300C119F5 /* ViewModelConsumer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelConsumer.swift; sourceTree = "<group>"; };
+		C3D70B89234ABFF000CB9679 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		C3D9B8EF21F398B3008D350C /* SwiftNest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D9B8F221F398B3008D350C /* SwiftNest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftNest.h; sourceTree = "<group>"; };
 		C3D9B8F321F398B3008D350C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -278,6 +282,14 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		C3D70B88234ABFD200CB9679 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				C3D70B89234ABFF000CB9679 /* Logger.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
 		C3D9B8E521F398B3008D350C = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +315,7 @@
 		C3D9B8F121F398B3008D350C /* SwiftNest */ = {
 			isa = PBXGroup;
 			children = (
+				C3D70B88234ABFD200CB9679 /* Logging */,
 				947F18E3225A372C00C67053 /* Web */,
 				C3B341FE222AC26500C119F5 /* View */,
 				C38397662203E73C00E50671 /* Security */,
@@ -620,6 +633,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D70B8C234ABFF000CB9679 /* Logger.swift in Sources */,
 				C347FA8521F7A5B5008C4E53 /* FileProvider.swift in Sources */,
 				C383976E2203E94800E50671 /* SimpleKeychain.swift in Sources */,
 				C347FA8821F7A5C0008C4E53 /* Image.swift in Sources */,
@@ -646,6 +660,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3D9B93421F39976008D350C /* EditDialogCoordinator.swift in Sources */,
+				C3D70B8A234ABFF000CB9679 /* Logger.swift in Sources */,
 				94F03AA522663D1D008C8EE8 /* DetailListViewModel.swift in Sources */,
 				C3D9B93921F39976008D350C /* Listable.swift in Sources */,
 				C3D9B96F21F3AA0A008D350C /* Font.swift in Sources */,
@@ -704,6 +719,7 @@
 				949229DB2257F61C0077A27F /* SectionedDetailListViewController.swift in Sources */,
 				C347FA9921F7A5E7008C4E53 /* BaseCoordinator.swift in Sources */,
 				949229D32256A6560077A27F /* DetailListViewModel.swift in Sources */,
+				C3D70B8B234ABFF000CB9679 /* Logger.swift in Sources */,
 				C3D9B97721F3AA36008D350C /* Regex.swift in Sources */,
 				C347FA8C21F7A5C9008C4E53 /* NetworkService.swift in Sources */,
 				C347FA9521F7A5DB008C4E53 /* Date+Extensions.swift in Sources */,
